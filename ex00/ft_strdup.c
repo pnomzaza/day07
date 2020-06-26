@@ -6,9 +6,12 @@
 /*   By: pnomzaza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 15:32:32 by pnomzaza          #+#    #+#             */
-/*   Updated: 2020/06/26 16:05:18 by pnomzaza         ###   ########.fr       */
+/*   Updated: 2020/06/26 16:50:37 by pnomzaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdio.h>
 
 char *ft_strdup(char *src)
 {
@@ -32,4 +35,14 @@ char *ft_strdup(char *src)
 	return(str);
 
 }
-
+int main() 
+{ 
+    char source[] = "Putumani Nomzaza"; 
+  
+    // A copy of source is created dynamically 
+    // and pointer to copy is returned. 
+    char* target = strdup(source);  
+  
+    printf("%s", target); 
+    return 0; 
+} 
